@@ -134,7 +134,6 @@ export default function DataCellMorph() {
                 position: 'absolute',
                 inset: 0,
                 transformStyle: 'preserve-3d',
-                willChange: 'transform',
               }}
             >
             {/* Front */}
