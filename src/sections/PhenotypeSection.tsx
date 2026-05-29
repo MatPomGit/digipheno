@@ -2,14 +2,14 @@ import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import DataCellMorph from '../components/effects/DataCellMorph';
-import { Microscope, BookOpen, FlaskConical } from 'lucide-react';
+import { Microscope, BookOpen, FlaskConical, BrainCircuit, ShieldCheck, Clock3 } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const SCIENTIFIC_POINTS = [
   {
     icon: Microscope,
-    title: 'Metodologia Onnela \& Torous',
+    title: 'Metodologia Onnela & Torous',
     content:
       'Platforma Beiwe, opracowana przez Jukka-Pekka Onnelę i Johna Torousa z Harvard Medical School, to jedno z najważniejszych narzędzi w fenotypowaniu cyfrowym. Umożliwia zbieranie danych pasywnych (GPS, akcelerometr, dzienniki połączeń, użycie ekranu) oraz aktywnych (kwestionariusze, próbki głosu) w sposób ciągły przez miesiące. W badaniu pilotażowym na 17 pacjentach z schizofrenią wykazano, że anomalia w danych behawioralnych może poprzedzać nawrót choroby z wyprzedzeniem umożliwiającym interwencję.',
   },
@@ -17,7 +17,7 @@ const SCIENTIFIC_POINTS = [
     icon: BookOpen,
     title: 'Informatyka Afektywna',
     content:
-      'Affective Computing — dziedzina łącząca informatykę, psychologię i kognitywistykę — dostarcza algorytmów rozpoznawania emocji z mowy, tekstu i ekspresji twarzy. W kontekście fenotypowania cyfrowego, analiza prozodii głosu (zmiany częstotliwości podstawowej F0, zakres melodiczy, energia sygnału) pozwala wnioskować o stanie nastrojowym. Schuller \& Schuller (2020) wykazali, że cechy głosu mogą predykować symptomy depresji z istotną precyzją statystyczną.',
+      'Affective Computing — dziedzina łącząca informatykę, psychologię i kognitywistykę — dostarcza algorytmów rozpoznawania emocji z mowy, tekstu i ekspresji twarzy. W kontekście fenotypowania cyfrowego, analiza prozodii głosu (zmiany częstotliwości podstawowej F0, zakres melodiczy, energia sygnału) pozwala wnioskować o stanie nastrojowym. Schuller & Schuller (2020) wykazali, że cechy głosu mogą predykować symptomy depresji z istotną precyzją statystyczną.',
   },
   {
     icon: FlaskConical,
@@ -25,6 +25,43 @@ const SCIENTIFIC_POINTS = [
     content:
       'Heart Rate Variability (zmienność rytmu serca) to kluczowy biomarker cyfrowy w psychiatrii. Zmniejszona HRV odzwierciedla zmniejszoną aktywność układu nerwowego parasympatycznego i wiąże się z depresją, lękiem oraz zaburzeniami stresu pourazowego. Wearables (Apple Watch, Fitbit, Garmin) umożliwiają ciągły pomiar HRV w naturalnym środowisku pacjenta, eliminując efekt laboratorium.',
   },
+  {
+    icon: BrainCircuit,
+    title: 'Modele osobiste zamiast populacyjnych',
+    content:
+      'Coraz częściej odchodzi się od jednego progu alarmowego dla wszystkich. Lepsze wyniki daje uczenie bazowej rutyny konkretnej osoby, a następnie wykrywanie zmian: krótszego snu, mniejszej mobilności, innego tonu głosu lub nagłego wzrostu nocnej aktywności telefonu.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Prywatność jako element metody',
+    content:
+      'Nowoczesne projekty zakładają minimalizację danych: przechowywanie cech pochodnych zamiast surowych nagrań, pseudonimizację identyfikatorów, szyfrowanie transmisji i jasną zgodę uczestnika. Bez zaufania użytkownika nawet najlepszy model traci wartość kliniczną.',
+  },
+];
+
+const TIMELINE_STEPS = [
+  {
+    year: '2015',
+    title: 'Smartfon jako sensor kliniczny',
+    text: 'Badania nad mobilnością i nastrojem pokazały, że wzorce GPS mogą uzupełniać klasyczne kwestionariusze depresji.',
+  },
+  {
+    year: '2016',
+    title: 'Definicja fenotypowania cyfrowego',
+    text: 'Torous i współautorzy opisali pomiar fenotypu człowieka „moment po momencie” za pomocą urządzeń osobistych.',
+  },
+  {
+    year: '2020+',
+    title: 'Przejście do modeli ciągłych',
+    text: 'Nacisk przesuwa się z pojedynczej diagnozy na monitoring trajektorii: ryzyka nawrotu, regeneracji i reakcji na leczenie.',
+  },
+];
+
+const ETHICAL_RULES = [
+  'Zbieraj tylko dane potrzebne do konkretnego pytania klinicznego lub badawczego.',
+  'Pokazuj użytkownikowi, jakie sygnały są mierzone i jak długo będą przechowywane.',
+  'Oddzielaj alerty wspierające decyzję od automatycznej diagnozy — człowiek pozostaje w pętli.',
+  'Projektuj systemy tak, aby przerwa w noszeniu urządzenia nie była interpretowana automatycznie jako pogorszenie stanu.',
 ];
 
 export default function PhenotypeSection() {
@@ -226,6 +263,78 @@ export default function PhenotypeSection() {
         <div>
           <DataCellMorph />
 
+          <div
+            style={{
+              marginTop: 44,
+              padding: '24px',
+              border: '1px solid rgba(255,255,255,0.08)',
+              background: 'rgba(18, 18, 26, 0.72)',
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <Clock3 size={18} color="#00E5FF" strokeWidth={1.5} />
+              <span
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 10,
+                  color: '#00E5FF',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Krótka oś rozwoju
+              </span>
+            </div>
+            <div style={{ marginTop: 18, display: 'flex', flexDirection: 'column', gap: 14 }}>
+              {TIMELINE_STEPS.map((step) => (
+                <div
+                  key={step.year}
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: '72px 1fr',
+                    gap: 16,
+                    paddingBottom: 14,
+                    borderBottom: '1px solid rgba(255,255,255,0.06)',
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "'Space Mono', monospace",
+                      fontSize: 13,
+                      color: '#2EB872',
+                    }}
+                  >
+                    {step.year}
+                  </span>
+                  <div>
+                    <h3
+                      style={{
+                        fontFamily: "'Space Grotesk', sans-serif",
+                        fontSize: 15,
+                        fontWeight: 500,
+                        color: '#E0E0E0',
+                        margin: 0,
+                      }}
+                    >
+                      {step.title}
+                    </h3>
+                    <p
+                      style={{
+                        fontFamily: "'JetBrains Mono', monospace",
+                        fontSize: 11,
+                        color: '#8A8A93',
+                        marginTop: 6,
+                        lineHeight: 1.6,
+                      }}
+                    >
+                      {step.text}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Additional content below grid */}
           <div style={{ marginTop: 48 }}>
             <h3
@@ -337,6 +446,43 @@ export default function PhenotypeSection() {
                   >
                     <span style={{ color: '#00E5FF', marginRight: 8 }}>→</span>
                     {point}
+                  </p>
+                ))}
+              </div>
+            </div>
+
+            <div
+              style={{
+                marginTop: 32,
+                padding: '28px',
+                border: '1px solid rgba(46, 184, 114, 0.18)',
+                background: 'rgba(46, 184, 114, 0.04)',
+              }}
+            >
+              <span
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: 10,
+                  color: '#2EB872',
+                  letterSpacing: '0.15em',
+                  textTransform: 'uppercase',
+                }}
+              >
+                Etyka projektowania
+              </span>
+              <div style={{ marginTop: 16, display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {ETHICAL_RULES.map((rule, idx) => (
+                  <p
+                    key={rule}
+                    style={{
+                      fontFamily: "'JetBrains Mono', monospace",
+                      fontSize: 11,
+                      color: '#8A8A93',
+                      lineHeight: 1.6,
+                    }}
+                  >
+                    <span style={{ color: '#2EB872', marginRight: 8 }}>0{idx + 1}</span>
+                    {rule}
                   </p>
                 ))}
               </div>
