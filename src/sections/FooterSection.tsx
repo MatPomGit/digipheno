@@ -55,7 +55,7 @@ export default function FooterSection() {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 10,
+              fontSize: 11.5,
               color: '#2EB872',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
@@ -79,7 +79,7 @@ export default function FooterSection() {
                 rel="noopener noreferrer"
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 11,
+                  fontSize: 12.5,
                   color: '#8A8A93',
                   textDecoration: 'none',
                   display: 'flex',
@@ -103,7 +103,7 @@ export default function FooterSection() {
           <p
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 10,
+              fontSize: 11.5,
               color: 'rgba(138, 138, 147, 0.5)',
               marginTop: 48,
             }}
@@ -152,7 +152,7 @@ export default function FooterSection() {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 9,
+              fontSize: 10.5,
               color: 'rgba(138, 138, 147, 0.4)',
               letterSpacing: '0.1em',
             }}

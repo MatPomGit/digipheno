@@ -110,7 +110,7 @@ export default function BiometricTypingCanvas() {
       ctx.clearRect(0, 0, width, height);
 
       // Font
-      const fontSize = Math.max(24, Math.min(48, width * 0.04));
+      const fontSize = Math.max(30, Math.min(58, width * 0.048));
       ctx.font = `500 ${fontSize}px 'Space Grotesk', sans-serif`;
       ctx.textBaseline = 'top';
 
