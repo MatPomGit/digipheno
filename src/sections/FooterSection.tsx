@@ -55,7 +55,7 @@ export default function FooterSection() {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 11.5,
+              fontSize: '0.75rem',
               color: '#2EB872',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
@@ -103,7 +103,7 @@ export default function FooterSection() {
           <p
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 11.5,
+              fontSize: '0.75rem',
               color: 'rgba(138, 138, 147, 0.5)',
               marginTop: 48,
             }}
