@@ -132,7 +132,7 @@ export default function PhenotypeSection() {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 12.5,
+              fontSize: 13,
               color: '#2EB872',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
