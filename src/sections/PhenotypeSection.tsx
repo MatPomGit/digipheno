@@ -11,7 +11,7 @@ const SCIENTIFIC_POINTS = [
     icon: Microscope,
     title: 'Metodologia Onnela & Torous',
     content:
-      'Platforma Beiwe, opracowana przez Jukka-Pekka Onnelę i Johna Torousa z Harvard Medical School, to jedno z najważniejszych narzędzi w fenotypowaniu cyfrowym. Umożliwia zbieranie danych pasywnych (GPS, akcelerometr, dzienniki połączeń, użycie ekranu) oraz aktywnych (kwestionariusze, próbki głosu) w sposób ciągły przez miesiące. W badaniu pilotażowym na 17 pacjentach z schizofrenią wykazano, że anomalia w danych behawioralnych może poprzedzać nawrót choroby z wyprzedzeniem umożliwiającym interwencję.',
+      'Platforma Beiwe, opracowana przez Jukka-Pekka Onnelę i Johna Torousa z Harvard Medical School, to jedno z najważniejszych narzędzi w fenotypowaniu cyfrowym. Umożliwia zbieranie danych pasywnych (GPS, akcelerometr, dzienniki połączeń, użycie ekranu) oraz aktywnych (kwestionariusze, próbki głosu) w sposób ciągły przez miesiące. W badaniu pilotażowym na 17 pacjentach ze schizofrenią wykazano, że anomalia w danych behawioralnych może poprzedzać nawrót choroby z wyprzedzeniem umożliwiającym interwencję.',
   },
   {
     icon: BookOpen,
