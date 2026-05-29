@@ -481,7 +481,7 @@ export default function PhenotypeSection() {
                       lineHeight: 1.6,
                     }}
                   >
-                    <span style={{ color: '#2EB872', marginRight: 8 }}>0{idx + 1}</span>
+                    <span style={{ color: '#2EB872', marginRight: 8 }}>{String(idx + 1).padStart(2, '0')}</span>
                     {rule}
                   </p>
                 ))}
