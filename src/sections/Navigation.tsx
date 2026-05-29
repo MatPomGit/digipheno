@@ -51,7 +51,7 @@ export default function Navigation() {
         onClick={(e) => handleClick(e, '#sensorium')}
         style={{
           fontFamily: "'Space Grotesk', sans-serif",
-          fontSize: 14,
+          fontSize: 16,
           fontWeight: 700,
           color: '#E0E0E0',
           textDecoration: 'none',
@@ -69,7 +69,7 @@ export default function Navigation() {
             onClick={(e) => handleClick(e, link.href)}
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 11,
+              fontSize: 12.5,
               color: '#8A8A93',
               textDecoration: 'none',
               textTransform: 'uppercase',

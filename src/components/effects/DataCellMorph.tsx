@@ -40,26 +40,33 @@ export default function DataCellMorph() {
     const grid = gridRef.current;
     if (!grid) return;
 
-    const cells = grid.querySelectorAll<HTMLDivElement>('.data-cell');
+    const cells = gsap.utils.toArray<HTMLDivElement>(grid.querySelectorAll('.data-cell'));
+
+    gsap.set(cells, {
+      transformPerspective: 1200,
+      transformStyle: 'preserve-3d',
+      force3D: true,
+      willChange: 'transform, opacity',
+    });
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: grid,
         start: 'top 85%',
         end: 'top 25%',
-        scrub: 1,
+        scrub: 0.65,
       },
     });
 
     tl.from(
       cells,
       {
-        z: () => gsap.utils.random(-600, 600),
-        rotationX: () => gsap.utils.random(-60, 60),
-        rotationY: () => gsap.utils.random(-60, 60),
-        opacity: 0,
-        stagger: 0.03,
-        ease: 'power2.out',
+        z: () => gsap.utils.random(-360, 360),
+        rotationX: () => gsap.utils.random(-26, 26),
+        rotationY: () => gsap.utils.random(-26, 26),
+        autoAlpha: 0,
+        stagger: 0.04,
+        ease: 'power3.out',
       }
     );
 
@@ -68,12 +75,26 @@ export default function DataCellMorph() {
     };
   }, []);
 
+  const flipCell = (cell: HTMLDivElement, rotationY: number) => {
+    const flipper = cell.querySelector<HTMLDivElement>('.data-cell-flipper');
+    if (!flipper) return;
+
+    gsap.killTweensOf(flipper);
+    gsap.to(flipper, {
+      rotationY,
+      duration: 0.85,
+      ease: 'power3.inOut',
+      overwrite: 'auto',
+      force3D: true,
+    });
+  };
+
   const handleMouseEnter = (cell: HTMLDivElement) => {
-    gsap.to(cell, { rotationY: 180, duration: 0.6, ease: 'back.out(1.7)' });
+    flipCell(cell, 180);
   };
 
   const handleMouseLeave = (cell: HTMLDivElement) => {
-    gsap.to(cell, { rotationY: 0, duration: 0.6, ease: 'power2.out' });
+    flipCell(cell, 0);
   };
 
   return (
@@ -81,9 +102,10 @@ export default function DataCellMorph() {
       ref={gridRef}
       style={{
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(170px, 1fr))',
         gap: 20,
-        perspective: 1000,
+        perspective: 1200,
+        perspectiveOrigin: '50% 40%',
       }}
     >
       {CELL_DATA.map((cell, idx) => {
@@ -104,8 +126,18 @@ export default function DataCellMorph() {
               aspectRatio: '1',
               transformStyle: 'preserve-3d',
               cursor: 'none',
+              willChange: 'transform, opacity',
             }}
           >
+            <div
+              className="data-cell-flipper"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                transformStyle: 'preserve-3d',
+                willChange: 'transform',
+              }}
+            >
             {/* Front */}
             <div
               style={{
@@ -124,7 +156,7 @@ export default function DataCellMorph() {
               <span
                 style={{
                   fontFamily: "'Space Mono', monospace",
-                  fontSize: 10,
+                  fontSize: 11.5,
                   color: '#8A8A93',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
@@ -135,7 +167,7 @@ export default function DataCellMorph() {
               <span
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
-                  fontSize: 'clamp(18px, 2.5vw, 28px)',
+                  fontSize: 'clamp(21px, 3vw, 32px)',
                   fontWeight: 700,
                   color: '#E0E0E0',
                   marginTop: 8,
@@ -166,7 +198,7 @@ export default function DataCellMorph() {
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 11,
+                  fontSize: 12.5,
                   color: '#8A8A93',
                   textAlign: 'center',
                   lineHeight: 1.4,
@@ -174,6 +206,7 @@ export default function DataCellMorph() {
               >
                 {cell.desc}
               </span>
+            </div>
             </div>
           </div>
         );

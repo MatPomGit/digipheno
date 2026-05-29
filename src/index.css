@@ -26,10 +26,17 @@
     --radius: 0.5rem;
   }
 
+  html {
+    font-size: 112.5%;
+  }
+
   body {
     font-family: 'JetBrains Mono', monospace;
     background-color: #050507;
     color: #E0E0E0;
+    font-size: 1rem;
+    line-height: 1.65;
+    text-rendering: geometricPrecision;
     overflow-x: hidden;
     cursor: none;
   }

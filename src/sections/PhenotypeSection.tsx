@@ -132,7 +132,7 @@ export default function PhenotypeSection() {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 11,
+              fontSize: 12.5,
               color: '#2EB872',
               letterSpacing: '0.2em',
               textTransform: 'uppercase',
@@ -157,7 +157,7 @@ export default function PhenotypeSection() {
           <p
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 13,
+              fontSize: 14.5,
               color: '#8A8A93',
               marginTop: 24,
               lineHeight: 1.8,
@@ -181,7 +181,7 @@ export default function PhenotypeSection() {
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 10,
+                fontSize: 11.5,
                 color: '#2EB872',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
@@ -192,7 +192,7 @@ export default function PhenotypeSection() {
             <p
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 12,
+                fontSize: 13.5,
                 color: '#E0E0E0',
                 marginTop: 8,
                 lineHeight: 1.7,
@@ -206,7 +206,7 @@ export default function PhenotypeSection() {
             <span
               style={{
                 fontFamily: "'Space Mono', monospace",
-                fontSize: 10,
+                fontSize: 11.5,
                 color: '#8A8A93',
                 marginTop: 8,
                 display: 'block',
@@ -234,7 +234,7 @@ export default function PhenotypeSection() {
                     <span
                       style={{
                         fontFamily: "'Space Grotesk', sans-serif",
-                        fontSize: 14,
+                        fontSize: 16,
                         fontWeight: 500,
                         color: '#E0E0E0',
                       }}
@@ -245,7 +245,7 @@ export default function PhenotypeSection() {
                   <p
                     style={{
                       fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 11,
+                      fontSize: 12.5,
                       color: '#8A8A93',
                       marginTop: 8,
                       lineHeight: 1.7,
@@ -276,7 +276,7 @@ export default function PhenotypeSection() {
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 10,
+                  fontSize: 11.5,
                   color: '#00E5FF',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
@@ -300,7 +300,7 @@ export default function PhenotypeSection() {
                   <span
                     style={{
                       fontFamily: "'Space Mono', monospace",
-                      fontSize: 13,
+                      fontSize: 14.5,
                       color: '#2EB872',
                     }}
                   >
@@ -321,7 +321,7 @@ export default function PhenotypeSection() {
                     <p
                       style={{
                         fontFamily: "'JetBrains Mono', monospace",
-                        fontSize: 11,
+                        fontSize: 12.5,
                         color: '#8A8A93',
                         marginTop: 6,
                         lineHeight: 1.6,
@@ -340,7 +340,7 @@ export default function PhenotypeSection() {
             <h3
               style={{
                 fontFamily: "'Space Grotesk', sans-serif",
-                fontSize: 22,
+                fontSize: 24,
                 fontWeight: 500,
                 color: '#E0E0E0',
                 marginBottom: 16,
@@ -378,7 +378,7 @@ export default function PhenotypeSection() {
                   <span
                     style={{
                       fontFamily: "'Space Grotesk', sans-serif",
-                      fontSize: 13,
+                      fontSize: 14.5,
                       fontWeight: 500,
                       color: '#2EB872',
                     }}
@@ -388,7 +388,7 @@ export default function PhenotypeSection() {
                   <p
                     style={{
                       fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 11,
+                      fontSize: 12.5,
                       color: '#8A8A93',
                       marginTop: 6,
                       lineHeight: 1.6,
@@ -412,7 +412,7 @@ export default function PhenotypeSection() {
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 10,
+                  fontSize: 11.5,
                   color: '#00E5FF',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
@@ -439,7 +439,7 @@ export default function PhenotypeSection() {
                     key={idx}
                     style={{
                       fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 11,
+                      fontSize: 12.5,
                       color: '#8A8A93',
                       lineHeight: 1.6,
                     }}
@@ -462,7 +462,7 @@ export default function PhenotypeSection() {
               <span
                 style={{
                   fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: 10,
+                  fontSize: 11.5,
                   color: '#2EB872',
                   letterSpacing: '0.15em',
                   textTransform: 'uppercase',
@@ -476,7 +476,7 @@ export default function PhenotypeSection() {
                     key={rule}
                     style={{
                       fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: 11,
+                      fontSize: 12.5,
                       color: '#8A8A93',
                       lineHeight: 1.6,
                     }}

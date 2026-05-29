@@ -103,7 +103,7 @@ export default function DatastreamSection() {
         <span
           style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 11,
+            fontSize: 12.5,
             color: '#2EB872',
             letterSpacing: '0.2em',
             textTransform: 'uppercase',
@@ -114,7 +114,7 @@ export default function DatastreamSection() {
         <h2
           style={{
             fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 'clamp(28px, 4vw, 48px)',
+            fontSize: 'clamp(34px, 4.8vw, 58px)',
             fontWeight: 700,
             color: '#E0E0E0',
             marginTop: 16,
@@ -127,7 +127,7 @@ export default function DatastreamSection() {
         <p
           style={{
             fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 14,
+            fontSize: 16,
             color: '#8A8A93',
             marginTop: 20,
             lineHeight: 1.7,
@@ -188,7 +188,7 @@ export default function DatastreamSection() {
                 <h3
                   style={{
                     fontFamily: "'Space Grotesk', sans-serif",
-                    fontSize: 20,
+                    fontSize: 24,
                     fontWeight: 500,
                     color: '#E0E0E0',
                     marginTop: 16,
@@ -199,7 +199,7 @@ export default function DatastreamSection() {
                 <p
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 12,
+                    fontSize: 13.5,
                     color: '#8A8A93',
                     marginTop: 12,
                     lineHeight: 1.7,
@@ -210,7 +210,7 @@ export default function DatastreamSection() {
                 <p
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 11,
+                    fontSize: 12.5,
                     color: '#2EB872',
                     marginTop: 14,
                     lineHeight: 1.7,
@@ -236,7 +236,7 @@ export default function DatastreamSection() {
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 10,
+                fontSize: 11.5,
                 color: '#2EB872',
                 letterSpacing: '0.15em',
                 textTransform: 'uppercase',
@@ -276,7 +276,7 @@ export default function DatastreamSection() {
                 <p
                   style={{
                     fontFamily: "'JetBrains Mono', monospace",
-                    fontSize: 11,
+                    fontSize: 12.5,
                     color: '#8A8A93',
                     marginTop: 10,
                     lineHeight: 1.6,
