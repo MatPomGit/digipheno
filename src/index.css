@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 24% 3%;
+    --foreground: 0 0% 88%;
+    --card: 240 20% 10%;
+    --card-foreground: 0 0% 88%;
+    --popover: 240 20% 10%;
+    --popover-foreground: 0 0% 88%;
+    --primary: 152 62% 45%;
+    --primary-foreground: 240 24% 3%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 88%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 57%;
+    --accent: 186 100% 50%;
+    --accent-foreground: 240 24% 3%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 20%;
+    --input: 240 5.9% 20%;
+    --ring: 152 62% 45%;
+    --radius: 0.5rem;
+  }
+
+  body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #050507;
+    color: #E0E0E0;
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  ::selection {
+    background-color: rgba(46, 184, 114, 0.3);
+    color: #FFFFFF;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-mono-nums {
+    font-family: 'Space Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #2EB872 0%, #00E5FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}

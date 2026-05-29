@@ -1,0 +1,15 @@
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router'
+import '@fontsource/space-grotesk/300.css'
+import '@fontsource/space-grotesk/500.css'
+import '@fontsource/space-grotesk/700.css'
+import '@fontsource/jetbrains-mono/400.css'
+import '@fontsource/space-mono/400.css'
+import './index.css'
+import App from './App.tsx'
+
+createRoot(document.getElementById('root')!).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+)
