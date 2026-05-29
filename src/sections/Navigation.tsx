@@ -69,7 +69,7 @@ export default function Navigation() {
             onClick={(e) => handleClick(e, link.href)}
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 13,
+              fontSize: '0.8125rem',
               color: '#8A8A93',
               textDecoration: 'none',
               textTransform: 'uppercase',
