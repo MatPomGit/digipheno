@@ -126,7 +126,6 @@ export default function DataCellMorph() {
               aspectRatio: '1',
               transformStyle: 'preserve-3d',
               cursor: 'none',
-              willChange: 'transform, opacity',
             }}
           >
             <div
