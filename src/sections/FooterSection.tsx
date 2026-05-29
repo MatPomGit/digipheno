@@ -103,7 +103,7 @@ export default function FooterSection() {
           <p
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 12,
+              fontSize: '0.75rem',
               color: 'rgba(138, 138, 147, 0.5)',
               marginTop: 48,
             }}
