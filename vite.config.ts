@@ -4,8 +4,10 @@ import { defineConfig } from "vite"
 import { inspectAttr } from 'kimi-plugin-inspect-react'
 
 // https://vite.dev/config/
+const base = process.env.VITE_BASE_PATH ?? './'
+
 export default defineConfig({
-  base: './',
+  base,
   plugins: [inspectAttr(), react()],
   server: {
     port: 3000,

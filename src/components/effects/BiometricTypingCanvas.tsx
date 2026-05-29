@@ -133,8 +133,8 @@ export default function BiometricTypingCanvas() {
 
         // Find position of newly revealed chars
         let charIdx = 0;
-        let lineSpacing = fontSize * 1.6;
-        let startY = height * 0.1;
+        const lineSpacing = fontSize * 1.6;
+        const startY = height * 0.1;
 
         for (const ld of lineData) {
           let lineVisible = 0;
@@ -180,8 +180,7 @@ export default function BiometricTypingCanvas() {
       }
 
       // Draw text
-      let charsDrawn = 0;
-      let lineSpacing = fontSize * 1.6;
+      const lineSpacing = fontSize * 1.6;
       let startY = height * 0.1;
 
       for (const ld of lineData) {
@@ -219,7 +218,6 @@ export default function BiometricTypingCanvas() {
         }
 
         startY += lineSpacing;
-        charsDrawn += ld.text.length;
       }
 
       // Update and draw particles
