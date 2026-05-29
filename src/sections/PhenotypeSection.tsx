@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger);
 const SCIENTIFIC_POINTS = [
   {
     icon: Microscope,
-    title: 'Metodologia Onnela \& Torous',
+    title: 'Metodologia Onnela & Torous',
     content:
-      'Platforma Beiwe, opracowana przez Jukka-Pekka Onnelę i Johna Torousa z Harvard Medical School, to jedno z najważniejszych narzędzi w fenotypowaniu cyfrowym. Umożliwia zbieranie danych pasywnych (GPS, akcelerometr, dzienniki połączeń, użycie ekranu) oraz aktywnych (kwestionariusze, próbki głosu) w sposób ciągły przez miesiące. W badaniu pilotażowym na 17 pacjentach z schizofrenią wykazano, że anomalia w danych behawioralnych może poprzedzać nawrót choroby z wyprzedzeniem umożliwiającym interwencję.',
+      'Platforma Beiwe, opracowana przez Jukka-Pekka Onnelę i Johna Torousa z Harvard Medical School, to jedno z najważniejszych narzędzi w fenotypowaniu cyfrowym. Umożliwia zbieranie danych pasywnych (GPS, akcelerometr, dzienniki połączeń, użycie ekranu) oraz aktywnych (kwestionariusze, próbki głosu) w sposób ciągły przez miesiące. W badaniu pilotażowym na 17 pacjentach ze schizofrenią wykazano, że anomalia w danych behawioralnych może poprzedzać nawrót choroby z wyprzedzeniem umożliwiającym interwencję.',
   },
   {
     icon: BookOpen,
     title: 'Informatyka Afektywna',
     content:
-      'Affective Computing — dziedzina łącząca informatykę, psychologię i kognitywistykę — dostarcza algorytmów rozpoznawania emocji z mowy, tekstu i ekspresji twarzy. W kontekście fenotypowania cyfrowego, analiza prozodii głosu (zmiany częstotliwości podstawowej F0, zakres melodiczy, energia sygnału) pozwala wnioskować o stanie nastrojowym. Schuller \& Schuller (2020) wykazali, że cechy głosu mogą predykować symptomy depresji z istotną precyzją statystyczną.',
+      'Affective Computing — dziedzina łącząca informatykę, psychologię i kognitywistykę — dostarcza algorytmów rozpoznawania emocji z mowy, tekstu i ekspresji twarzy. W kontekście fenotypowania cyfrowego, analiza prozodii głosu (zmiany częstotliwości podstawowej F0, zakres melodyczny, energia sygnału) pozwala wnioskować o stanie nastrojowym. Schuller & Schuller (2020) wykazali, że cechy głosu mogą predykować symptomy depresji z istotną precyzją statystyczną.',
   },
   {
     icon: FlaskConical,
